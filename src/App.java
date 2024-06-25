@@ -9,8 +9,8 @@ public class App {
             System.out.println("1. Adicionar Funcionario");
             System.out.println("2. Buscar Funcionario");
             System.out.println("3. Listar Funcionario");
-            System.out.println("5. Apagar Funcionario");
-            System.out.println("4. Sair");
+            System.out.println("4. Apagar Funcionario");
+            System.out.println("5. Sair");
             System.out.print("Escolha a opção: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -47,8 +47,21 @@ public class App {
 
             } else if (choice == 3) {
                 manager.listAllEmployees();
+                
+            } else if (choice == 4) { 
+                System.out.print( "ID do funcionario a pagar:") 
+                    int idToRemove = scanner.nextInt();
+                scanner.nextLine(); 
+                Iterator <Employee>
+                    iterator = employee.iterator();
+                while (iterator.hasNext()){
+                    Employee employee = iterator.next();
+                    if (employee.getId() == idToRemove{ 
+                        iterator.remove();
+                        System.out.println("Funcionario com ID" + idToRemove + "removido.";
+                        break;
 
-            } else if (choice == 4) {
+            } else if (choice == 5) {
                 break;
             } else {
                 System.out.println("Opção incorreta tente novamente!");
