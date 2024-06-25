@@ -23,12 +23,24 @@ Esta aplicação é responsavel por gerir uma equipe de funcionarios criando, li
 - [x] buscar
 - [x] sair do programa
 
+
 Para criar um novo funcionario deve se escolher a opção 1
-sendo obrigatorio a passagens dos parametros para criação do mesmo.
+1 - Id do usuário
+2 - Nome
+3 - Alergia 
+4 - Medicamento (toma algum medicamento para saúde) 
+5 - Email
+6 - Telefone
 
-Para listar todos os funcionarios deve se escolher a opção 2, será listado todos os funcionarios
 
-Para buscar individualmente um usuário deve se adicionar o id para listar somente um usuário
 
-Para Sair do programa deverá escolher a opção 4
+Para listar todos os funcionarios deve se escolher a opção 2, será listado todos os funcionarios.
+
+Para buscar individualmente um usuário deve se adicionar o id para listar somente um usuário.
+Para Buscar o funciorio criado , clicar na opção 3.
+Para Apagar Funcionario clicar na opção 4.
+Ao apagar o funcionario selecionar o ID do funcionario para apagar.
+
+Para Sair do programa deverá escolher a opção 5.
+
 
