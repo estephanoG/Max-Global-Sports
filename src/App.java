@@ -49,7 +49,7 @@ public class App {
                 manager.listAllEmployees();
                 
             } else if (choice == 4) { 
-                System.out.print( "ID do funcionario a pagar:") 
+                System.out.print( "ID do funcionario a pagar:"); 
                     int idToRemove = scanner.nextInt();
                 scanner.nextLine(); 
                 Iterator <Employee>
