@@ -49,17 +49,15 @@ public class App {
                 manager.listAllEmployees();
                 
             } else if (choice == 4) { 
-                System.out.print( "ID do funcionario a pagar:"); 
-                    int idToRemove = scanner.nextInt();
-                scanner.nextLine(); 
-                Iterator <Employee>
-                    iterator = employee.iterator();
-                while (iterator.hasNext()){
-                    Employee employee = iterator.next();
-                    if (employee.getId() == idToRemove{ 
-                        iterator.remove();
-                        System.out.println("Funcionario com ID" + idToRemove + "removido.";
-                        break;
+              System.out.println("ID do Funcionario para apagar:");
+                String id = scanner.nextLine();
+                boolean removed = manager.deleteEmployee(id);
+                if(removed){
+                    System.out.println("Funcionario removido com sucesso!");
+                
+                 } else { 
+                    System.out.println("Funcionario não encontrado!");
+                }
 
             } else if (choice == 5) {
                 break;
