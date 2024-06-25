@@ -14,7 +14,14 @@ public class EmployeeManager {
     public Employee getEmployee(String id) {
         return employees.get(id);
     }
-
+ public boolean deleteEmployee(String id){
+        if (employees.containsKey(id)) {
+            employees.remove(id);
+            return true;
+        }
+        return false;
+    
+    }
     public void listAllEmployees() {
         if (employees.isEmpty()) {
             System.out.println("Nenhum Funcionario Encontrato.");
